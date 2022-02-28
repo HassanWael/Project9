@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  background-color: #b9d6f2;
+  color: #061a40;
+}
+.Nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  padding-top: 10px;
+  justify-content: space-between;
+  background-color: #b9d6f2;
+  z-index: 100;
+
+}
+.Nav>.login{
+  display: flex;
+  padding-top: 10px;
+  
+}
+.Nav>.login>*{
+  margin: 5px;
+}
+.logo>img{
+  width: 60px;
+}
+
+.container{
+  display: grid;
+  grid-template-areas:  "nav   "
+                        "form "
+                        "home ";
+  margin: 100px 30px;
+  
+}
+.container>*{
+  align-items: right;
+  justify-content: right;
+}
+
+.form{
+  grid-area: form;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.home{
+  grid-area: home;
+  margin:20px auto;
+}
+.nav{
+  grid-area: nav;
+}
